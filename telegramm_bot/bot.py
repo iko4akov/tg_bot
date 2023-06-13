@@ -1,6 +1,7 @@
+import os
 from aiogram import Bot, Dispatcher, executor, types
 
-API_TOKEN = '6052813762:AAGiqkpVcYDHlZp7fSpgkirSRJklr1lORdg'
+API_TOKEN = os.environ.get(TOKKEN_TELEGRAMM) 
 
 
 bot = Bot(token=API_TOKEN)
