@@ -9,11 +9,11 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):
-   await message.reply("\n--->Сашка дурачек<-----\n")
+   await message.reply("\n--->hello<-----\n")
 
 @dp.message_handler()
 async def echo(message: types.Message):
-    await message.answer('САНЯ ТЫ ДАЛБОЕБ!!!')
+    await message.answer('hello')
 
 
 if __name__ == '__main__':
